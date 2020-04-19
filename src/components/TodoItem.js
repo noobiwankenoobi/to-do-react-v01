@@ -24,9 +24,9 @@ export class TodoItem extends Component {
     return (
       // accessing the class method as inline styling
       <div className='todo-item' style={this.getStyle()}>
-        <h5>{title}</h5>
-        <button onClick={this.props.markComplete.bind(this, id)}>V</button>
-        <button onClick={this.props.deleteTodo.bind(this, id)}>X</button>
+        <h3>{title}</h3>
+        <button className='completed-btn' onClick={this.props.markComplete.bind(this, id)}><i className='fa fa-check btn-icon'></i></button>
+        <button className='trash-btn' onClick={this.props.deleteTodo.bind(this, id)}><i className="fa fa-trash btn-icon"></i></button>
       </div>
     )
   }
