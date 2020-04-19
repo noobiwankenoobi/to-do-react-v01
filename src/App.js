@@ -38,6 +38,11 @@ class App extends Component {
         id: uuidv4(),
         title: 'Hang with Will and Taylor',
         completed: false
+      },
+      {
+        id: uuidv4(),
+        title: 'Hang with Buddy',
+        completed: false
       }
     ]
   }

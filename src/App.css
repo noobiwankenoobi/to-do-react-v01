@@ -63,6 +63,11 @@ header {
   transition: all 0.5s ease;
 }
 
+.todo-input {
+  min-width: 30vw;
+  height: 4rem;
+}
+
 
 .completed-btn {
   background: #3DA5D9;
@@ -108,7 +113,13 @@ header {
   font-size: 2rem;
   background: white;
   outline: none;
+  height: 4rem;
+}
 
+.todo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-button i {
