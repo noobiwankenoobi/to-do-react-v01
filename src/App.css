@@ -67,16 +67,20 @@ header {
 .completed-btn {
   background: #3DA5D9;
   margin-left: auto;
-  padding: 1rem;
+  /* padding: 1rem; */
   outline: none;
   cursor: pointer;
+  height: 4rem;
+  width: 4rem;
 }
 
 .trash-btn {
   background: rgb(255, 149, 11);
-  padding: 1rem;
+  /* padding: 1rem; */
   outline: none;
   cursor: pointer;
+  height: 4rem;
+  width: 4rem;
 }
 
 .todo-item {
@@ -89,6 +93,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  height: 4rem;
 }
 
 .form {
@@ -103,9 +108,60 @@ header {
   font-size: 2rem;
   background: white;
   outline: none;
+
 }
 
 .todo-button i {
   color: #3DA5D9;
   cursor: pointer;
+  height: 100%;
+
+}
+
+@media screen and (max-width: 768px){
+  .todo-item {
+    height: 3rem;
+  }
+
+  .todo-list {
+    width: 90vw;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .completed-btn, .trash-btn {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .form {
+   margin: 0 .5rem;
+   font-size: 1rem;
+   min-height: 8vh;
+  }
+
+  .todo-input {
+    width: 80vw;
+    font-size: 1rem;
+    height: 3rem;
+  }
+
+  .todo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+  }
+
+  .todo-container {
+    margin-top: 2rem;
+  }
+
+  /* .todo-input {
+    font-size: 1.2rem;
+    width: 80%;
+
+  } */
 }

@@ -21,7 +21,7 @@ export class AddTodo extends Component {
           className="todo-input"
           value={this.state.title}
           onChange={this.onChange}
-          placeholder="add todo..."
+          placeholder="add to do..."
         ></input>
         <button className="todo-button" type="submit" value="Submit">
           <i className="fa fa-plus-square"></i>
