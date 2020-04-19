@@ -91,3 +91,21 @@ header {
   transition: all 0.5s ease;
 }
 
+.form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input, .todo-button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  background: white;
+  outline: none;
+}
+
+.todo-button i {
+  color: #3DA5D9;
+  cursor: pointer;
+}
